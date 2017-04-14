@@ -1,6 +1,13 @@
 # exma-0408-homework
 Vue.js cli env project
 
+## Start
+```bash
+npm bash
+# or yarn install
+npm run dev
+```
+
 # Create a todo list
 ## 需要做到
 * 新增 todo item

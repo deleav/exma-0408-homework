@@ -8,6 +8,16 @@ npm bash
 npm run dev
 ```
 
+## 建議閱讀程式方式
+1. 從 `src/router/index.js` 找到 `Profile` component
+2. 找到 `src/components/Profile.vue` 搭配 `src/store/index.js` 服用
+3. [注意] 若子組建要使用 __Vue Router__ 須在 `src/main.js` 的 Vue instance 注入 `router`(import from router)
+  * 為了讓 __Vue__ 能夠觀察 __Vue Router__ 的變動需調用 `Vue.use(Router)`
+4. [注意] 若子組建要使用 __Vuex__ 須在 `src/main.js` 的 Vue instance 注入 `store`(import from Vuex)
+  * 為了讓 __Vue__ 能夠觀察 __Vuex__ 的變動需調用 `Vue.use(Vuex)`
+
+__以上原理請自行查閱 [Vue Docs](https://vuejs.org/)__
+
 # Create a todo list
 ## 需要做到
 * 新增 todo item

@@ -16,6 +16,7 @@ export default {
     }
   },
   mutations: {
+    // payload 可以是任何 type，建議是 object，這邊為了範例方便就只有單一值
     [types.updateName]( state, payload ) {
       state.name = payload;
     },
